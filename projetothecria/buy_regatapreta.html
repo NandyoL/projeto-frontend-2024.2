@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Compra</title>
+    <link rel="stylesheet" href="teladecompra.css">
+</head>
+<body> 
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <li><a href="telaprincipal.html">THE CRIA</a></li>
+            <li><a href="newdrop.html">New Drop</a></li>
+            <li><a href="outletthecria.html">Outlet</a></li>
+            <li><a href="quemsomos.html">Quem somos?</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="cadastro.html" class="signup-btn">Cadastro</a>
+        </div>
+    </nav>
+
+    <div class="product-container">
+        <div class="image-gallery">
+            <img src="images/regata_preta_tc.jpg" alt="Produto" class="main-image" id="mainImage">
+            <div class="thumbnails">
+                <img src="images/regata_preta_tc1.jpg" alt="Produto" class="thumbnail">
+                <img src="images/regata_preta_tc.jpg" alt="Produto" class="thumbnail">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>REGATA PRETA THE CRIA</h1>
+            <p class="description"> 
+<BR><BR>
+                Regata preta.
+<BR>
+                Composição: 100% Algodão.
+<BR><BR>
+               *Este anúncio se refere somente a camiseta. Os demais itens contidos na imagem, são vendidos separadamente.
+<BR><BR>                
+                Todas as peças da The Cria são criadas e produzidas no Brasil.</p>
+             <div class="sizes">
+                <label for="sizes">Tamanhos:</label>
+                <select id="sizes">
+                    <option value="p">P</option>
+                    <option value="m">M</option>
+                    <option value="g">G</option>
+                    <option value="gg">GG</option>
+                </select>
+            </div>
+            <p class="price">R$ 49,99</p>
+            <button class="buy-button">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 The Cria. Todos os direitos reservados.</p>
+        <p>Contato: (21)99922-8825
+        <br> 
+        <a href="mailto:thecria@gmail.com">thecria@gmail.com</a></p>
+        <ul>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Serviço</a></li>
+            <li><a href="#">Ajuda</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    const mainImage = document.getElementById('mainImage');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+            mainImage.src = this.src; // Atualiza a imagem maior com a fonte da miniatura
+        });
+    });
+</script>
+
+</body>
+</html>

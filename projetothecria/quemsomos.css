@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    place-items: center;
+    height: auto;
+    text-align: center;
+    background-image: url('images/img_thecriabackground.jpeg');
+    background-size: cover; /* A imagem cobre todo o fundo da tela */
+    background-position: center; /* A imagem é centralizada */
+    background-repeat: no-repeat; /* A imagem não se repete */
+
+}
+
+h1 {
+    font-style: oblique;
+    font-size: 3.5rem;
+    color: #0000009a;
+}
+
+p {
+    font-size: 1.4rem;
+    color: black;
+    font-style:oblique;
+    margin: 32px;
+}
+
+.container {
+    width: auto;
+    max-width: auto;
+    background-color: rgba(255, 255, 255, 0.432);
+    padding: 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/*navbar abaixo*/
+.navbar {
+    display: flex;
+    position: relative;
+    top: 0px;
+    align-items: first baseline;
+    justify-content: space-between;
+    background-color:  rgb(255, 255, 255);
+    color: white;
+    width: 100%;
+    max-width: 5000px;
+    transition: top 0.3s;
+    z-index: 10;
+}
+
+.navbar-menu img {
+    max-width: 5%;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 15px;
+}
+
+.navbar-menu a {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+.navbar-actions {
+    display: flex;
+}
+
+.navbar-brand a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-btn,
+.signup-btn {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    background-color: #bbbbbbde;
+    border-color: #bbbbbbde;
+}
+
+/*//// Rodapé /////*/
+footer {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    text-align: start;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 10px 0;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    place-items: center;
+    height: auto;
+    text-align: center;
+    background: #bbbbbbde;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.8);
+    justify-content: center;
+    padding: 10px;
+    place-content: center;
+    width: 400px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+}
+
+h1 {
+    font-style: oblique;
+    font-size: 3.5rem;
+    color: #0000009a;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+a {
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+input[type="text"], input[type=password], input[type="date"], button {
+    width: calc(100% - 20px); /* Já está ótimo! */
+    padding: 12px; /* Ajuste para mais conforto */
+    margin-bottom: 15px; /* Espaçamento extra entre os inputs */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Um pouco mais suave que 20px */
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: white;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #bbbbbbde;
+}
+
+
+
+.title {
+    font-size: 2em;
+    margin-top: 60px;
+}
+
+/*navbar abaixo*/
+.navbar {
+    display: flex;
+    position: relative;
+    top: 0px;
+    align-items: first baseline;
+    justify-content: space-between;
+    background-color:  rgb(255, 255, 255);
+    color: white;
+    width: 100%;
+    max-width: 5000px;
+    transition: top 0.3s;
+    z-index: 10;
+}
+
+.navbar-menu img {
+    max-width: 5%;
+}
+
+.content {
+    margin-top: 60px;
+    padding: 15px;
+}
+
+.navbar-menu a {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+.navbar-actions {
+    display: flex;
+}
+
+.navbar-brand a {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.login-btn,
+.signup-btn {
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+    background-color: #bbbbbbde;
+    border-color: #bbbbbbde;
+}
+
+/*carrossel abaixo CSS*/
+
+.conteudo__geral {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 76vh;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-carrossel {
+    --widthItem: 150px;
+    --heightItem: 100px;
+    width: var(--widthItem);
+    height: var(--heightItem);
+    perspective: 1000px;
+  }
+  
+  .carrossel {
+    --rotatey: 0;
+    font-size: 4rem;
+    position: relative;
+    transform: rotatey(var(--rotatey));
+    transform-style: preserve-3d;
+    user-select: none;
+    cursor: grab;
+  }
+  
+  .carrossel-item {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: opacity 0.5s;
+  }
+  
+
+  
+  .carrossel,
+  .carrossel-item {
+    width: 100%;
+    height: 110%;
+  }
+  /* background: linear-gradient(-229deg, #642B73, #C6426E); */
+  
+  .carrossel-item:nth-child(1) {
+    --rotatey: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: linear-gradient(-229deg, #fbd52d, #ef3a7b);
+  }
+  
+  .carrossel-item:nth-child(2) {
+    --rotatey: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: black;
+  }
+  
+  .carrossel-item:nth-child(3) {
+    --rotatey: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: black;
+  }
+  .carrossel-item:nth-child(4) {
+    --rotatey: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: black;
+  }
+  
+  .carrossel-item:nth-child(5) {
+    --rotate: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background:black;
+  }
+  
+  .carrossel-item:nth-child(6) {
+    --rotatey: 0;
+    transform: rotatey(var(--rotatey)) translatez(var(--tz));
+    background: black;
+  }
+  
+  @media screen and (min-width: 576px) {
+    .container-carrossel {
+      --widthItem: 230px;
+      --heightItem: 230px;
+    }
+  }
+
+  /* Banner fixo no lado esquerdo da tela */
+.left-banner {
+  position: absolute;
+    top: 50px;
+    left: 20px;
+    width: 218px;
+    height: 550px;
+    transition: transform 0.3s ease;
+}
+.rigth-banner {
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    width: 320px;
+    height: 310px;
+    transition: transform 0.3s ease;
+}
+
+/* banner hover */
+.left-banner:hover {
+  transform: scale(1.10);
+}
+.rigth-banner:hover {
+  transform: scale(1.10);
+}
+
+.banner img {
+  width: 100%; /* Faz a imagem preencher a largura do container */
+  height: 100%; /* Faz a imagem preencher a altura do container */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+}
+
+/* Media Query para telas pequenas (ex: celulares) */
+@media (max-width: 768px) {
+  .rigth-banner .left-banner {
+      top: 20px; /* Ajusta a posição superior para telas pequenas */
+      left: 10px; /* Ajusta a posição à esquerda */
+      width: 250px; /* Aumenta a largura para 250px */
+      height: 80px; /* Diminui a altura para 80px */
+  }
+}
+
+
+/* Media Query para telas muito pequenas (ex: smartphones em modo retrato) */
+@media (max-width: 480px) {
+  .rigth-banner .left-banner {
+      top: 10px; /* Ajusta a posição superior */
+      left: 5px; /* Ajusta a posição à esquerda */
+      width: 200px; /* Aumenta a largura para 200px */
+      height: 80px; /* Diminui a altura para 80px */
+  }
+}
+
+
+/* Media Query para telas grandes (ex: desktops grandes ou tablets em paisagem) */
+@media (min-width: 1024px) {
+  .rigth-banner .left-banner {
+      width: 350px; /* Largura maior em telas grandes */
+      height: 120px; /* Altura ajustada para ser retangular (baixo e largo) */
+  }
+}
+
+
+/*//// Rodapé /////*/
+footer {
+    background-color: black;
+    width: 100%;
+    height: 84%;
+    text-align: start;
+     margin-top: 20px;
+    font-weight: bold;
+}
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 10px 0;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  place-items: center;
+  height: auto;
+  text-align: center;
+  background: #bbbbbbde;
+  background-size: cover;
+  background-position: center;
+}
+  
+h1 {
+    font-style: oblique;
+    font-size: 2.5rem;
+    color: #0000009a;
+  }
+
+/*navbar abaixo*/
+.navbar {
+  display: flex;
+  position: relative;
+  top: 0px;
+  align-items: first baseline;
+  justify-content: space-between;
+  background-color:  rgb(255, 255, 255);
+  color: #fff;
+  width: 100%;
+  max-width: 5000px;
+  transition: top 0.3s;
+  z-index: 10px;
+}
+
+.navbar-menu img {
+  max-width: 5%;
+}
+
+.content {
+  margin-top: 60px;
+  padding: 15px;
+}
+
+.navbar-menu a {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+}
+
+.navbar-menu a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-menu a:hover {
+  text-decoration: underline;
+}
+
+.navbar-actions {
+  display: flex;
+}
+
+.navbar-brand a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.login-btn,
+.signup-btn {
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: #bbbbbbde;
+  border-color: #bbbbbbde;
+}
+
+
+/*Galeria do New drop*/
+  .product-gallery {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsivo */
+    gap: 20px;
+  }
+  
+  .product-item {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-item:hover {
+    transform: scale(1.25);
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+.btn-comprar {
+    background-color: white;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    margin: 4px;
+    margin-top: 4px;
+    min-inline-size: 100px;
+    font-size: x-large;
+}
+
+.btn-comprar:hover {
+    background-color: #bbbbbbde;
+}
+
+/*//// Rodapé /////*/
+footer {
+  background-color: black;
+  width: 100%;
+  height: 84%;
+  text-align: start;
+   margin-top: 20px;
+  font-weight: bold;
+}
+
+.footer-content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 10px 0;
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
